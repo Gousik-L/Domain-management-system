@@ -11,6 +11,8 @@ interface RecentActivityProps {
 export const RecentActivity: React.FC<RecentActivityProps> = ({ activities }) => {
   const getActionIcon = (action: string) => {
     switch (action) {
+
+      
       case 'renewed':
         return <CheckCircle className="w-4 h-4 text-emerald-500" />;
       case 'registered':
